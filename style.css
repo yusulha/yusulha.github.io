@@ -1,11 +1,11 @@
 @font-face {
     font-family: notojp;
-    src: url(font/notosansjp.ttf);
+    src: url(notosansjp.ttf);
 }
 
 @font-face {
     font-family: notokr;
-    src: url(font/notosanskr.ttf);
+    src: url(notosanskr.ttf);
 }
 
 html, body {
