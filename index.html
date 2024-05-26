@@ -32,4 +32,13 @@
         <source src="img_mv/idol_mv.mp4" type="video/mp4">
     </video>
 
+    <script>
+        // JavaScript to force reload the GIF
+        document.addEventListener('DOMContentLoaded', function() {
+            var logoGif = document.getElementById('logo_gif');
+            var currentSrc = logoGif.src;
+            logoGif.src = currentSrc + '?random=' + new Date().getTime();
+        });
+    </script>
+    
 </body>
