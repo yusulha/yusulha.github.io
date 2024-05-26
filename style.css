@@ -8,6 +8,12 @@
     src: url(notosanskr.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -35,6 +41,7 @@ a {
     object-fit: cover;
     z-index: 10000;
     animation: fadeOut 1s 3.5s forwards; /* 3.5초 후 1초 동안 페이드 아웃 애니메이션 */
+    display: none;
 }
 
 @keyframes fadeOut {
