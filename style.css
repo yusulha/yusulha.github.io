@@ -40,7 +40,7 @@ a {
     height: 100%;
     object-fit: cover;
     z-index: 10000;
-    animation: fadeOut 1s 3.5s forwards; /* 3.5초 후 1초 동안 페이드 아웃 애니메이션 */
+    animation: fadeOut 0.7s 3.5s forwards; /* 3.5초 후 1초 동안 페이드 아웃 애니메이션 */
     display: none;
 }
 
@@ -78,7 +78,7 @@ a {
     margin: 0;
     padding: 0;
     gap: 40px;
-    right: 108px; /*1848 기준 36, 100% 기준 108*/
+    right: 36px; /*1848 기준 36, 100% 기준 108*/
     font-size: 20px;
     font-weight: 500;
     text-align: 100%;
