@@ -23,6 +23,7 @@ html, body {
 body {
     margin: 0; padding: 0;
     font-family: "notojp";
+    background-color: #000;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: black;
+    background-color: #000;
     object-fit: cover;
     animation: fadeOut 0.7s 3.0s forwards; /* 3.0초 후 0.7초 동안 페이드 아웃 애니메이션 */
 }
@@ -125,8 +126,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 동영상의 비율을 유지하면서 부모 요소에 맞게 조정 */
-    z-index: -1; /* 다른 요소들이 동영상 위에 오도록 설정 */
+    object-fit: cover;
+    z-index: -1;
 }
 
 #blur {
@@ -146,4 +147,92 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+/* ------------------------------------------ */
+
+#main_container {
+    position: relative;
+    width: 1096px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#pic_profile {
+    width: 100%;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 100%;
+}
+
+#profile_text {
+    font-family: "notokr";
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -2.5%;
+    line-height: 160%;
+    margin-top: 40px;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #F2285A;
+}
+
+.member {
+    width: 1096px;
+    margin-top: 40px;
+}
+.member_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.member_title {
+    font-family: "notokr";
+    font-size: 36px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 100%;
+}
+
+.member_body {
+    font-family: "notokr";
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 160%;
+}
+
+#footer {
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    font-family: "notokr";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    margin-top: 200px;
 }
